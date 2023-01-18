@@ -1,0 +1,21 @@
+.popup{
+    display: none;
+}
+.profilpic:hover object{
+    scale: 0.95;
+}
+.profilpic:hover .popup{
+    display: block;
+    animation-name: slide;
+    animation-duration: 0.4s;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 100;
+    }
+}
