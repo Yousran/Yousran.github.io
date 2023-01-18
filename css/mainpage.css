@@ -1,21 +1,52 @@
+.profilpic{
+    /* background-color: brown; */
+}
+
 .popup{
+    /* background-color: cyan; */
     display: none;
 }
+.profilpic object{
+    display: block;
+    animation-name: popup;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    user-select: none;
+}
 .profilpic:hover object{
-    scale: 0.95;
+    display: none;
 }
 .profilpic:hover .popup{
     display: block;
-    animation-name: slide;
-    animation-duration: 0.4s;
+    animation-name: popup;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+}
+.popup div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@keyframes popout{
+    0%{
+        opacity: 100;
+        scale: 1;
+    }
+    100%{
+        opacity: 0;
+        scale: 0;
+        display: none;
+    }
 }
 
-@keyframes slide{
+@keyframes popup{
     0%{
         opacity: 0;
-        transform: translateX(-20%);
+        scale: 0;
     }
     100%{
         opacity: 100;
+        scale: 1;
     }
 }
