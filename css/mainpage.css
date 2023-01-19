@@ -28,6 +28,22 @@
     margin-right: auto;
     text-align: center;
 }
+
+a{
+    text-decoration:none;  
+}
+.card-img-overlay{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-img-overlay{
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
 @keyframes popout{
     0%{
         opacity: 100;
