@@ -4304,6 +4304,8 @@ textarea.form-control-lg {
   left: 0;
   padding: var(--bs-card-img-overlay-padding);
   border-radius: var(--bs-card-inner-border-radius);
+  background-color: rgba(0, 0, 0, 0.175);
+  
 }
 
 .card-img,
