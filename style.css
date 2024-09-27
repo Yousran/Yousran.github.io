@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8EDED;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #8a2626;
+    color: #F8EDED;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 7vh;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li:hover {
+    background-color: #F8EDED;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li a {
+    padding: 1rem 2rem;
+    color: #F8EDED;
+    text-decoration: none;
+    font-size: medium;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ded5d5;
+    padding: 0 3rem;
+    min-height: 100vh;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto; 
+}
+
+p {
+    text-align: justify;
+}
+
+.about {
+    padding: 1rem 3rem;
+}
+
+.about article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+main article {
+    padding-right: 10rem;
+}
+
+.about article p {
+    width: 49%;
+}
+
+.gallery {
+    padding: 1rem 3rem;
+    background-color: #ded5d5;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.gallery-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-content{
+    overflow: hidden;
+}
+
+footer {
+    background-color: #8a2626;
+    color: #F8EDED;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+}
+
+footer div img{
+    width: 50px;
+    height: auto;
+}
+
+footer p {
+    text-align: center;
+}
+
+.gallery-content img:hover {
+    /* opacity: 0.6; */
+    scale: 1.5;
+    transition: all 0.5s ease;
+}
+
+.logo, .medsos{
+    display: flex;
+}
+
+footer .logo h3{
+    margin-left: 1rem;
+}
+
+.medsos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.medsos div a{
+    text-align: start;
+    color: #F8EDED;
+    text-decoration: none;
+}
+
+.medsos div a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main{
+        flex-direction: column;
+    }
+    .about article{
+        flex-direction: column;
+    }
+    .about article p{
+        width: auto;
+    }
+    aside{
+        order: -1;
+    }
+    .medsos{
+        display: none;
+    }
+    main article {
+        padding-right: 0rem;
+    }
+}
